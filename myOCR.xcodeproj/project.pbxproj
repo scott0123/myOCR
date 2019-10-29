@@ -11,6 +11,7 @@
 		66E4CC2623688BD2000C36D3 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66E4CC2423688BD2000C36D3 /* MainMenu.xib */; };
 		66E4CC2923688BD2000C36D3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 66E4CC2823688BD2000C36D3 /* main.m */; };
 		66E4CC3D2368941C000C36D3 /* Resources in Resources */ = {isa = PBXBuildFile; fileRef = 66E4CC3C2368941C000C36D3 /* Resources */; };
+		66E4CC422368B729000C36D3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66E4CC412368B729000C36D3 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,7 +23,7 @@
 		66E4CC2823688BD2000C36D3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		66E4CC2A23688BD2000C36D3 /* myOCR.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = myOCR.entitlements; sourceTree = "<group>"; };
 		66E4CC3C2368941C000C36D3 /* Resources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Resources; sourceTree = "<group>"; };
-		66E4CC3E2368B58D000C36D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		66E4CC412368B729000C36D3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +56,6 @@
 		66E4CC1E23688BD1000C36D3 /* myOCR */ = {
 			isa = PBXGroup;
 			children = (
-				66E4CC3E2368B58D000C36D3 /* Assets.xcassets */,
 				66E4CC3C2368941C000C36D3 /* Resources */,
 				66E4CC1F23688BD1000C36D3 /* AppDelegate.h */,
 				66E4CC2023688BD1000C36D3 /* AppDelegate.m */,
@@ -63,6 +63,7 @@
 				66E4CC2723688BD2000C36D3 /* Info.plist */,
 				66E4CC2823688BD2000C36D3 /* main.m */,
 				66E4CC2A23688BD2000C36D3 /* myOCR.entitlements */,
+				66E4CC412368B729000C36D3 /* Images.xcassets */,
 			);
 			path = myOCR;
 			sourceTree = "<group>";
@@ -98,6 +99,11 @@
 				TargetAttributes = {
 					66E4CC1B23688BD1000C36D3 = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -124,6 +130,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66E4CC422368B729000C36D3 /* Images.xcassets in Resources */,
 				66E4CC2623688BD2000C36D3 /* MainMenu.xib in Resources */,
 				66E4CC3D2368941C000C36D3 /* Resources in Resources */,
 			);
@@ -270,7 +277,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = myOCR/myOCR.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = AGPAHW954E;
@@ -288,7 +294,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = myOCR/myOCR.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = AGPAHW954E;
