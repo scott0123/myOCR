@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "SLScreenshot.h"
+#import "SLTesseract.h"
 
 @interface AppDelegate ()
 
@@ -133,7 +135,7 @@ bool preview_enabled;
 
 - (void)OptionOne {
     // start the OCR
-    printf("OCR START");
+    [self BeginOCR];
 }
 
 - (void)OptionTwo {
@@ -160,6 +162,21 @@ bool preview_enabled;
     [NSApp terminate:self];
 }
 
+- (void)BeginOCR {
+    SLScreenshot *shooter = [[SLScreenshot alloc] init];
+    [shooter TakeScreenshot:^(NSImage* screenshot){
+        NSString* text = [self imageToText:screenshot];
+        // Copy to pasteboard
+        [[NSPasteboard generalPasteboard] clearContents];
+        [[NSPasteboard generalPasteboard] setString:text forType:NSPasteboardTypeString];
+    }];
+}
 
+- (NSString*) imageToText:(NSImage*)image{
+    SLTesseract *ocr = [[SLTesseract alloc] init];
+    ocr.language = @"eng";
+    NSString *text = [ocr recognize:image];
+    return text;
+}
 
 @end
