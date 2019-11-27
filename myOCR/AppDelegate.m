@@ -163,8 +163,7 @@ bool preview_enabled;
 }
 
 - (void)BeginOCR {
-    SLScreenshot *shooter = [[SLScreenshot alloc] init];
-    [shooter TakeScreenshot:^(NSImage* screenshot){
+    [SLScreenshot TakeScreenshot:^(NSImage* screenshot){
         NSString* text = [self imageToText:screenshot];
         // Copy to pasteboard
         [[NSPasteboard generalPasteboard] clearContents];

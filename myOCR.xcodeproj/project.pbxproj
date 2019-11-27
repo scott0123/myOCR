@@ -7,12 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6697C0AE238E19FE00F9F3C2 /* SLScreenshotOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 6697C0AA238E19FE00F9F3C2 /* SLScreenshotOverlay.m */; };
+		6697C0AF238E19FF00F9F3C2 /* SLScreenshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 6697C0AC238E19FE00F9F3C2 /* SLScreenshot.m */; };
 		66E4CC2123688BD1000C36D3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 66E4CC2023688BD1000C36D3 /* AppDelegate.m */; };
 		66E4CC2623688BD2000C36D3 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66E4CC2423688BD2000C36D3 /* MainMenu.xib */; };
 		66E4CC2923688BD2000C36D3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 66E4CC2823688BD2000C36D3 /* main.m */; };
 		66E4CC3D2368941C000C36D3 /* Resources in Resources */ = {isa = PBXBuildFile; fileRef = 66E4CC3C2368941C000C36D3 /* Resources */; };
 		66E4CC422368B729000C36D3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66E4CC412368B729000C36D3 /* Images.xcassets */; };
-		66E4CC452368B89A000C36D3 /* SLScreenshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 66E4CC432368B89A000C36D3 /* SLScreenshot.m */; };
 		66E4CC482368B8A2000C36D3 /* SLTesseract.mm in Sources */ = {isa = PBXBuildFile; fileRef = 66E4CC472368B8A2000C36D3 /* SLTesseract.mm */; };
 		66E4CC4D2368BA33000C36D3 /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 66E4CC4A2368BA33000C36D3 /* tessdata */; };
 		66E4CC9D2368BA71000C36D3 /* libz.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 66E4CC502368BA70000C36D3 /* libz.a */; };
@@ -24,6 +25,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6697C0AA238E19FE00F9F3C2 /* SLScreenshotOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLScreenshotOverlay.m; sourceTree = "<group>"; };
+		6697C0AB238E19FE00F9F3C2 /* SLScreenshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLScreenshot.h; sourceTree = "<group>"; };
+		6697C0AC238E19FE00F9F3C2 /* SLScreenshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLScreenshot.m; sourceTree = "<group>"; };
+		6697C0AD238E19FE00F9F3C2 /* SLScreenshotOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLScreenshotOverlay.h; sourceTree = "<group>"; };
 		66E4CC1C23688BD1000C36D3 /* myOCR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myOCR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66E4CC1F23688BD1000C36D3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		66E4CC2023688BD1000C36D3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -33,8 +38,6 @@
 		66E4CC2A23688BD2000C36D3 /* myOCR.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = myOCR.entitlements; sourceTree = "<group>"; };
 		66E4CC3C2368941C000C36D3 /* Resources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Resources; sourceTree = "<group>"; };
 		66E4CC412368B729000C36D3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		66E4CC432368B89A000C36D3 /* SLScreenshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLScreenshot.m; sourceTree = "<group>"; };
-		66E4CC442368B89A000C36D3 /* SLScreenshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLScreenshot.h; sourceTree = "<group>"; };
 		66E4CC462368B8A1000C36D3 /* SLTesseract.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLTesseract.h; sourceTree = "<group>"; };
 		66E4CC472368B8A2000C36D3 /* SLTesseract.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SLTesseract.mm; sourceTree = "<group>"; };
 		66E4CC4A2368BA33000C36D3 /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
@@ -153,8 +156,10 @@
 				66E4CC3C2368941C000C36D3 /* Resources */,
 				66E4CC1F23688BD1000C36D3 /* AppDelegate.h */,
 				66E4CC2023688BD1000C36D3 /* AppDelegate.m */,
-				66E4CC442368B89A000C36D3 /* SLScreenshot.h */,
-				66E4CC432368B89A000C36D3 /* SLScreenshot.m */,
+				6697C0AB238E19FE00F9F3C2 /* SLScreenshot.h */,
+				6697C0AC238E19FE00F9F3C2 /* SLScreenshot.m */,
+				6697C0AD238E19FE00F9F3C2 /* SLScreenshotOverlay.h */,
+				6697C0AA238E19FE00F9F3C2 /* SLScreenshotOverlay.m */,
 				66E4CC462368B8A1000C36D3 /* SLTesseract.h */,
 				66E4CC472368B8A2000C36D3 /* SLTesseract.mm */,
 				66E4CC2423688BD2000C36D3 /* MainMenu.xib */,
@@ -350,9 +355,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				66E4CC2923688BD2000C36D3 /* main.m in Sources */,
-				66E4CC452368B89A000C36D3 /* SLScreenshot.m in Sources */,
 				66E4CC2123688BD1000C36D3 /* AppDelegate.m in Sources */,
 				66E4CC482368B8A2000C36D3 /* SLTesseract.mm in Sources */,
+				6697C0AE238E19FE00F9F3C2 /* SLScreenshotOverlay.m in Sources */,
+				6697C0AF238E19FF00F9F3C2 /* SLScreenshot.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
